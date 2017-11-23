@@ -2,379 +2,47 @@
 <html>
 
 <head>
-    <title>Learning Bootstrap</title>
+    <title>Bootstrap carousel</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,300i,400,400i,500,500i,600,600i&amp;subset=latin-ext" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    
     <link href="style.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> </head>
+     </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="goToTop">TOP</button>
-    <header>
-        <div class="container-fluid">
-            <div class="row first-row">
-                <div class="col-md-4 logo-row">
-                    <div class="logo"> <span>bootstrapSite</span> </div>
-                </div>
-                <div class="col-md-8 nav-row">
-                    <nav class="main-nav">
-                        <div>
-                            <ul>
-                                <li><a href="#" id="link1">Basic</a></li>
-                                <li><a href="#" id="link2">About</a></li>
-                                <li><a href="#" id="link3">Grid</a></li>
-                                <li><a href="http://www.xn--micha-szyszka-portfolio-g2d.pl/" target="_blank">My portfolio</a></li>
-                            </ul>
+   <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="my-slider" class="carousel slide" data-target="carousel">
+                    <!-- wrapper for sliders -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="../Carousel/Bootstrap-carousel/img/1.jpg" alt="car">
+                            </div>
+                            
+                            <div class="item">
+                            </div>
+                            
+                            <div class="item">
+                            </div>
+                            
+                            <div class="item">
+                            </div>
+                            
                         </div>
-                    </nav>
+                    <!-- indicators dot nav -->
+
+                    <!-- controls on next and prev btn -->
                 </div>
             </div>
-            <h1 class="header-txt-h1">
-                This is my site made on
-                <br/>
-                        <sapn>Bootstrap</sapn>
-                </h1>
-            <h2 class="header-txt-h2"> It's also about it<br/>so You can find something interesting and useful<br/> Enjoy</h2> </div>
-    </header>
-    <section class="section-basic" id="basic">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 bootstrap-txt-col">
-                    <figure> <img src="img/bootstrap-txt.jpg" class="txt"> </figure>
-                </div>
-                <div class="col-md-6 ">
-                    <figure> <img src="img/bootstrap-img.jpg" class="img"> </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="photo-section" id="about">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="photo1">
-                        <div class="overlay">
-                            <figure> <img src="img/klawiatura3.jpg" class="my-img"> </figure>
-                            <a class="link" href="#">
-                                <p> You'r codding
-                                    <br/><span>faster</span></p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="photo1">
-                        <div class="overlay">
-                            <figure> <img src="img/zegarek.jpg" class="my-img"> </figure>
-                            <a class="link" href="#">
-                                <p>You'r saving
-                                    <br/><span>time</span></p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <article class="article-about-bootstrap">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 text-about-bootstrap">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia malesuada ligula ac maximus. Sed dapibus ipsum ac nisi gravida rutrum. Aliquam vitae justo ultricies, condimentum tortor sit amet, semper quam. Mauris ut facilisis turpis.</p>
-                    <p> Mauris ullamcorper sollicitudin ipsum in porttitor. Proin gravida facilisis ipsum ultricies aliquet. Sed ultrices nibh non odio vestibulum cursus. Phasellus erat felis, faucibus id arcu at, imperdiet ornare ante. Duis aliquet rhoncus faucibus.</p>
-                </div>
-                <div class="col-md-6 col-sm-12 text-about-bootstrap">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia malesuada ligula ac maximus. Sed dapibus ipsum ac nisi gravida rutrum. Aliquam vitae justo ultricies, condimentum tortor sit amet, semper quam. Mauris ut facilisis turpis.</p>
-                    <p> Mauris ullamcorper sollicitudin ipsum in porttitor. Proin gravida facilisis ipsum ultricies aliquet. Sed ultrices nibh non odio vestibulum cursus. Phasellus erat felis, faucibus id arcu at, imperdiet ornare ante. Duis aliquet rhoncus faucibus.</p>
-                </div>
-            </div>
-        </div>
-    </article>
-    <section class="grid" id="grid">
-        <div class="container-fluid">
-            <div class="grid-header">
-                <h3>
-                    Bootstrap<sapn class="grid-header-txt">grid</sapn>
-                </h3> <i class="fa fa-hashtag fa-5x"></i> </div>
-            <div class="clearfix"></div>
-            <div class="grid-txt">
-                <p>This is representation of Bootstrap grid. You can see six rows in six difrent colors and twelve columns in each of it when you displaing this site on large screan, six columns on medium screan, three on small screan and one on mobile. </p>
-            </div>
-            <div class="row grid-section-row row1">
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-            </div>
-            <div class="row grid-section-row row2">
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-            </div>
-            <div class="row grid-section-row row3">
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-            </div>
-            <div class="row grid-section-row row4">
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-            </div>
-            <div class="row grid-section-row row5">
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-            </div>
-            <div class="row grid-section-row row6">
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-                <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
-                    <div class="point"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container-fluid"> <i class="fa  fa-pagelines fa-3x"></i>
-            <p> All rights reserved &copy; Author of the site - Michał Szyszka.
-                <br/> </p>
-        </div>
-    </footer>
-    <!--    //////////////////////// LINKs FOR SCRIPT.JS AND JQUERY /////////////////////////-->
-    <script src="script.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="jquery.scrollTo.min.js"></script>
-    <script>
-        //                             jQUERY SCROLL-TO
-        jQuery(function ($) {
-            //scroll reset
-            $.scrollTo(0);
-            $("#link1").click(function () {
-                $.scrollTo($('#basic').offset().top - 60, 500);
-            });
-        });
-        jQuery(function ($) {
-            //scroll reset
-            $.scrollTo(0);
-            $("#link2").click(function () {
-                $.scrollTo($('#about').offset().top - 60, 500);
-            });
-        });
-        jQuery(function ($) {
-            //scroll reset
-            $.scrollTo(0);
-            $("#link3").click(function () {
-                $.scrollTo($('#grid').offset().top - 60, 700);
-            });
-        });
-        jQuery(function ($) {
-            //scroll reset
-            $.scrollTo(0);
-            $("#link4").click(function () {
-                $.scrollTo($('body'), 600);
-            });
-        });
-        //                               END OF SCROLL To
-    </script>
+       </div>
+    </div>
 </body>
 
 </html>
